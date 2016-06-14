@@ -1,0 +1,438 @@
+{
+    "metadata_fields":["batch_id", "subject_id", "file_id", "metadata"],
+
+    "metrics_fields":["batch_id", "subject_id", "file_id", "atlas", "region", "num_vert", "surf_area", "thick_avg",
+                      "thick_std", "mean_curv", "gaus_curv", "fold_ind", "curv_ind", "volume"],
+
+    "image_fields":["batch_id", "subject_id", "filename", "filepath", "uri", "content_type", "bytes", "preview",
+                    "md5sum" , "sha1sum" , "sha256sum" , "sha512sum"],
+
+    "images":
+    [
+        {
+            "image_files":["*.mgz"],
+            "preprocessor": "freesurfer",
+            "checksums":["md5","sha256"],
+            "base_url": "https://bdds-dev.isrd.isi.edu/data",
+            "base_path": "phewas/ping",
+            "path_pattern":"(PNG[0-9]+_[FfMm][0-9]+.+)",
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "pattern": "PNG[0-9]+_[FfMm][0-9]+",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "image_files":["lh.orig", "lh.smoothwm.C.crv"],
+            "preprocessor": "freesurfer",
+            "checksums":["md5","sha256"],
+            "base_url": "https://bdds-dev.isrd.isi.edu/data",
+            "base_path": "phewas/ping",
+            "path_pattern":"(PNG[0-9]+_[FfMm][0-9]+.+)",
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "pattern": "PNG[0-9]+_[FfMm][0-9]+",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "image_files":["lh.pial", "lh.smoothwm.C.crv"],
+            "preprocessor": "freesurfer",
+            "checksums":["md5","sha256"],
+            "base_url":"https://bdds-dev.isrd.isi.edu/data",
+            "base_path":"phewas/ping",
+            "path_pattern":"(PNG[0-9]+_[FfMm][0-9]+.+)",
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "pattern": "PNG[0-9]+_[FfMm][0-9]+",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "image_files":["lh.smoothwm", "lh.smoothwm.C.crv"],
+            "preprocessor": "freesurfer",
+            "checksums":["md5","sha256"],
+            "base_url":"https://bdds-dev.isrd.isi.edu/data",
+            "base_path":"phewas/ping",
+            "path_pattern":"(PNG[0-9]+_[FfMm][0-9]+.+)",
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "pattern": "PNG[0-9]+_[FfMm][0-9]+",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "image_files":["lh.inflated", "lh.smoothwm.C.crv"],
+            "preprocessor": "freesurfer",
+            "checksums":["md5","sha256"],
+            "base_url":"https://bdds-dev.isrd.isi.edu/data",
+            "base_path":"phewas/ping",
+            "path_pattern":"(PNG[0-9]+_[FfMm][0-9]+.+)",
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "pattern": "PNG[0-9]+_[FfMm][0-9]+",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "image_files":["rh.orig", "rh.smoothwm.C.crv"],
+            "preprocessor": "freesurfer",
+            "checksums":["md5","sha256"],
+            "base_url":"https://bdds-dev.isrd.isi.edu/data",
+            "base_path":"phewas/ping",
+            "path_pattern":"(PNG[0-9]+_[FfMm][0-9]+.+)",
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "pattern": "PNG[0-9]+_[FfMm][0-9]+",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "image_files":["rh.pial", "rh.smoothwm.C.crv"],
+            "preprocessor": "freesurfer",
+            "checksums":["md5","sha256"],
+            "base_url":"https://bdds-dev.isrd.isi.edu/data",
+            "base_path":"phewas/ping",
+            "path_pattern":"(PNG[0-9]+_[FfMm][0-9]+.+)",
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "pattern": "PNG[0-9]+_[FfMm][0-9]+",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "image_files":["rh.smoothwm", "rh.smoothwm.C.crv"],
+            "preprocessor": "freesurfer",
+            "checksums":["md5","sha256"],
+            "base_url":"https://bdds-dev.isrd.isi.edu/data",
+            "base_path":"phewas/ping",
+            "path_pattern":"(PNG[0-9]+_[FfMm][0-9]+.+)",
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "pattern": "PNG[0-9]+_[FfMm][0-9]+",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "image_files":["rh.inflated", "rh.smoothwm.C.crv"],
+            "preprocessor": "freesurfer",
+            "checksums":["md5","sha256"],
+            "base_url":"https://bdds-dev.isrd.isi.edu/data",
+            "base_path":"phewas/ping",
+            "path_pattern":"(PNG[0-9]+_[FfMm][0-9]+.+)",
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "pattern": "PNG[0-9]+_[FfMm][0-9]+",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        }
+    ],
+    "metrics":
+    [
+        {
+            "input_file": "aseg.stats",
+            "preprocessor": "freesurfer",
+            "atlas_name": "FS_aseg",
+            "column_mappings": {
+                "region": "StructName",
+                "volume": "Volume_mm3"
+            },
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "input_file": "wmparc.stats",
+            "preprocessor": "freesurfer",
+            "atlas_name": "FS_wmparc",
+            "column_mappings": {
+                "region": "StructName",
+                "volume": "Volume_mm3"
+            },
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "input_file": "lh.aparc.stats",
+            "preprocessor": "freesurfer",
+            "atlas_name": "FS_aparc_aseg",
+            "region_prefix": "ctx-lh-",
+            "region_column": "region",
+            "column_mappings": {
+                "region": "StructName",
+                "num_vert": "NumVert",
+                "surf_area": "SurfArea" ,
+                "volume": "GrayVol",
+                "thick_avg": "ThickAvg" ,
+                "thick_std": "ThickStd" ,
+                "mean_curv": "MeanCurv",
+                "gaus_curv": "GausCurv",
+                "fold_ind": "FoldInd",
+                "curv_ind": "CurvInd"
+            },
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "input_file": "rh.aparc.stats",
+            "preprocessor": "freesurfer",
+            "atlas_name": "FS_aparc_aseg",
+            "region_prefix": "ctx-rh-",
+            "region_column": "region",
+            "column_mappings": {
+                "region": "StructName",
+                "num_vert": "NumVert",
+                "surf_area": "SurfArea" ,
+                "volume": "GrayVol",
+                "thick_avg": "ThickAvg" ,
+                "thick_std": "ThickStd" ,
+                "mean_curv": "MeanCurv",
+                "gaus_curv": "GausCurv",
+                "fold_ind": "FoldInd",
+                "curv_ind": "CurvInd"
+            },
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "input_file": "lh.aparc.a2009s.stats",
+            "preprocessor": "freesurfer",
+            "atlas_name": "FS_aparc_2009",
+            "region_prefix": "ctx_lh_",
+            "region_column": "region",
+            "column_mappings": {
+                "region": "StructName",
+                "num_vert": "NumVert",
+                "surf_area": "SurfArea" ,
+                "volume": "GrayVol",
+                "thick_avg": "ThickAvg" ,
+                "thick_std": "ThickStd" ,
+                "mean_curv": "MeanCurv",
+                "gaus_curv": "GausCurv",
+                "fold_ind": "FoldInd",
+                "curv_ind": "CurvInd"
+            },
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "input_file": "rh.aparc.a2009s.stats",
+            "preprocessor": "freesurfer",
+            "atlas_name": "FS_aparc_2009",
+            "region_prefix": "ctx_rh_",
+            "region_column": "region",
+            "column_mappings": {
+                "region": "StructName",
+                "num_vert": "NumVert",
+                "surf_area": "SurfArea" ,
+                "volume": "GrayVol",
+                "thick_avg": "ThickAvg" ,
+                "thick_std": "ThickStd" ,
+                "mean_curv": "MeanCurv",
+                "gaus_curv": "GausCurv",
+                "fold_ind": "FoldInd",
+                "curv_ind": "CurvInd"
+            },
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "input_file": "lh.BA.stats",
+            "preprocessor": "freesurfer",
+            "atlas_name": "FS_Brodmann",
+            "region_prefix": "lh_",
+            "region_column": "region",
+            "column_mappings": {
+                "region": "StructName",
+                "num_vert": "NumVert",
+                "surf_area": "SurfArea" ,
+                "volume": "GrayVol",
+                "thick_avg": "ThickAvg" ,
+                "thick_std": "ThickStd" ,
+                "mean_curv": "MeanCurv",
+                "gaus_curv": "GausCurv",
+                "fold_ind": "FoldInd",
+                "curv_ind": "CurvInd"
+            },
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "input_file": "rh.BA.stats",
+            "preprocessor": "freesurfer",
+            "atlas_name": "FS_Brodmann",
+            "region_prefix": "rh_",
+            "region_column": "region",
+            "column_mappings": {
+                "region": "StructName",
+                "num_vert": "NumVert",
+                "surf_area": "SurfArea" ,
+                "volume": "GrayVol",
+                "thick_avg": "ThickAvg" ,
+                "thick_std": "ThickStd" ,
+                "mean_curv": "MeanCurv",
+                "gaus_curv": "GausCurv",
+                "fold_ind": "FoldInd",
+                "curv_ind": "CurvInd"
+            },
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "input_file": "lh.BA.thresh.stats",
+            "preprocessor": "freesurfer",
+            "atlas_name": "FS_Brodmann_thresh",
+            "region_prefix": "lh_",
+            "region_column": "region",
+            "column_mappings": {
+                "region": "StructName",
+                "num_vert": "NumVert",
+                "surf_area": "SurfArea" ,
+                "volume": "GrayVol",
+                "thick_avg": "ThickAvg" ,
+                "thick_std": "ThickStd" ,
+                "mean_curv": "MeanCurv",
+                "gaus_curv": "GausCurv",
+                "fold_ind": "FoldInd",
+                "curv_ind": "CurvInd"
+            },
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        },
+        {
+            "input_file": "rh.BA.thresh.stats",
+            "preprocessor": "freesurfer",
+            "atlas_name": "FS_Brodmann_thresh",
+            "region_prefix": "rh_",
+            "region_column": "region",
+            "column_mappings": {
+                "region": "StructName",
+                "num_vert": "NumVert",
+                "surf_area": "SurfArea" ,
+                "volume": "GrayVol",
+                "thick_avg": "ThickAvg" ,
+                "thick_std": "ThickStd" ,
+                "mean_curv": "MeanCurv",
+                "gaus_curv": "GausCurv",
+                "fold_ind": "FoldInd",
+                "curv_ind": "CurvInd"
+            },
+            "value_mappings":
+            [
+                {
+                    "column": "subject_id",
+                    "source": "mapped_id",
+                    "dest": "orig_id",
+                    "file": "D:\\PNG_renamed.csv"
+                }
+            ]
+        }
+    ]
+}
